@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr {
+            background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: 1px;
+        }
+
+        .wc-message {
+            font-family: 'Pushster', cursive;
+            line-height: 1.6em;
+            font-size: 320%;
+        }
+
+        .large-otp {
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 320%;
+        }
+
+        .emphasized {
+            color: rgb(64, 64, 64);
+        }
+
+        .vertical {
+            border-right: 1px solid #eee;
+            padding-right: 5px;
+
+
+
+
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin:auto; width: 60%; padding: 3%;border: 1px solid #eee ; box-shadow: 1px 1px 10px #dbdbdb">
+    <header>
+        <div></div>
+        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer"
+            style="min-width:100%;">
+            <tbody>
+                <tr>
+                    <td class="mcnImageContent" valign="middle" height="100"
+                        style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                        <a href="#" title="" class="" target="_blank">
+                            <img alt="alista logo" src="<%= logo %>" width="100px" height="100px" title="image">
+                        </a>
+						 
+                    </td>
+                </tr>
+				<tr>
+				<td><p style="font-size:40px;font-family:'Lobster', cursive;">Welcome to Alista!</p></td>
+				</tr>
+				<tr> 
+				<td><hr></td>
+				</tr>
+				<tr> 
+				<td><br></td>
+				</tr>
+				
+            </tbody>
+        </table>
+    </header>
+    <main>
+
+        <div style="margin:25px 0;">
+			<div>
+                <strong class="emphasized">Hi <%= name%>,
+                </strong>
+            </div>
+            <div style="margin-top: 30px;">
+                <%- html%>
+            </div>
+            <div style="margin-top: 30px;">
+                <strong class="emphasized" style="line-height: 2.6em;">Have a lovely day!</strong>
+                <br>
+                <strong class="emphasized">Alista Team</strong>
+                <p>from: <span><%= admin%></span></p>
+            </div>
+        </div>
+
+        <div style="width: max-content; display:flex; margin:auto; align-items: center;">
+        	<div style="margin-right: 10px">
+        	<a href="#">
+        		<img alt="alista logo" src="<%= googleplay_logo %>" width="150px" height="50px" title="image">
+        	</a>
+        </div>
+        	<div style="margin-left: 10px">
+        		<a href="#">
+        		<img alt="alista logo" src="<%= appstore_logo %>" width="150px" height="50px" title="image">
+        	</a>
+        	</div>
+        </div>
+        <hr>
+        <div style="text-align: center;"><a class="vertical" style="margin-right: 5px;" href="">Call us</a><a
+                href="">Email us</a></div>
+    </main>
+    <footer style="margin-top:50px">
+        <p style="color: 	rgb(206, 203, 203);">Sent with ♡ from Alista Team</p>
+
+        <p style="color: 	rgb(206, 203, 203);"> All rights reserved. Copyright © 2021 SkillRoots LTD Company</p>
+    </footer>
+
+</body>
+
+</html>

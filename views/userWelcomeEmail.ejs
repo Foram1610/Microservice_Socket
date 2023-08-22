@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: gay; */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        hr {
+            background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: 1px;
+        }
+
+        .wc-message {
+            font-family: 'Pushster', cursive;
+            line-height: 1.6em;
+            font-size: 320%;
+        }
+
+        .large-otp {
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 320%;
+        }
+
+        .emphasized {
+            color: rgb(3, 7, 24);
+        }
+
+        .vertical {
+            border-right: 1px solid #eee;
+            padding-right: 5px;
+
+        }
+
+        .top-image {
+            text-align: center;
+        }
+
+        .welcome {
+            font-weight: bold;
+            text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+                0px -4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .main-div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .body-div {
+            width: 650px;
+            padding: 10px;
+            /* margin: 45px 75px 100px; */
+            /* background-color: #eee; */
+        }
+
+        .button {
+            text-align: center;
+            margin: 30px 0;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(6, 163, 163);
+            border: 0;
+            color: #fff
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 792px) {
+            .body-div {
+                width: 100%;
+                /* margin: 45px; */
+
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="main-div">
+            <div>
+                <div class="body-div">
+                    <div class="top-image">
+                        <img width="150px" src=<%=logo %> alt="alistaLogo">
+                    </div>
+                    <div>
+                        <h2 class="welcome">Welcome To Alista!</h2>
+                        <p>
+                            Hi <%= name %>,
+                        </p>
+                        <p>
+                            Thank you for creating new customer account in Alista - the best place to request any
+                            service you may need around your home or company!
+                        </p>
+                        <p>
+                            With your precious Alista account, you can do a lot! You can easily manage and track the
+                            progress of all your service requests in one place.
+                        </p>
+                        <div class="button">
+                            <a href=<%=url %> target="_blank">
+                                <button>
+                                    Please Click Here to Verify Your Email
+                                </button>
+                            </a>
+
+                        </div>
+                        <p>
+                            We are more than happy to hear from you & receive your inquiries & suggestions, so please do
+                            not
+                            hesitate to reach us at <a href="mailto:wecare@skillroots.com">wecare@skillroots.com</a>
+                        </p>
+                        <div>
+                            <strong class="emphasized" style="line-height: 2.6em;">Have a lovely day!</strong>
+                            <br>
+                            <strong class="emphasized">Alista Team</strong>
+                        </div>
+                    </div>
+                    <hr style="margin: 30px 0;">
+                    <div class="icons">
+                        <div>
+                            <img style="margin-right:10px" src="https://i.ibb.co/mHtRHSt/Picture2.png" alt="appstore">
+                            <img src="https://i.ibb.co/cctvwr9/Picture1.png" alt="playstore">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="text-align: center;margin:20px 0;"><small><a class="vertical"
+                                    style="margin-right: 5px;" href="">Call
+                                    us</a></small><small><a href="">Email us</a></small></div>
+                    </div>
+                    <div style="margin:20px 0">
+                        <small style="color: 	rgb(136, 135, 135);">Sent with ♡ from Alista Team</small>
+                        <br>
+                        <small style="color: 	rgb(136, 135, 135);"> All rights reserved. Copyright © 2021 SkillRoots LTD
+                            Company
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <hr>
+
+        <div style="margin:25px 0;">
+            <div>
+                <strong class="emphasized">Hi <%= name%>,
+                </strong>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <strong class="emphasized" style="line-height: 2.6em;">Have a lovely day!</strong>
+                <br>
+                <strong class="emphasized">Alista Team</strong>
+            </div>
+        </div>
+
+        <hr>
+        <div style="text-align: center;"><a class="vertical" style="margin-right: 5px;" href="">Call us</a><a
+                href="">Email us</a></div> -->
+    </main>
+    <!-- <footer style="margin-top:50px">
+        <p style="color: 	rgb(216,216,216);">Sent with ♡ from Alista Team</p>
+
+        <p style="color: 	rgb(216,216,216);"> All rights reserved. Copyright © 2021 SkillRoots LTD Company</p>
+    </footer> -->
+
+</body>
+
+</html>
