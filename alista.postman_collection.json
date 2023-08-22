@@ -1,0 +1,966 @@
+{
+	"info": {
+		"_postman_id": "3eebaa39-d74e-4d6b-9ef1-db7db574ee2f",
+		"name": "alista l",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "addTask",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taskNames\": [\r\n     {\r\n     \"categoryId\": \"60ed36227a48d49370a6c3d4\", \r\n      \"name\": {\"en\": \"engName\", \"ar\": \"arName\"},\r\n      \"serviceId\": \"60ed42fe888ed01f5002d52e\"\r\n     },{\r\n     \"categoryId\": \"60ed36227a48d49370a6c3d4\", \r\n      \"name\": {\"en\": \"engName\", \"ar\": \"arName\"},\r\n      \"serviceId\": \"60ed42fe888ed01f5002d52e\"\r\n     },{\r\n     \"categoryId\": \"60ed36227a48d49370a6c3d4\", \r\n      \"name\": {\"en\": \"engName\", \"ar\": \"arName\"},\r\n      \"serviceId\": \"60ed42fe888ed01f5002d52e\"\r\n     }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/addTask",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"addTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get task with filter",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"limit\":\"5\",\r\n    \"page\":\"1\",\r\n    \"sortField\":\"createdAt\",\r\n    \"sortOrder\":\"-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/getTasksWithFilter",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"getTasksWithFilter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete task",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/deleteTask/60ec49ee6b667c0320487711",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"deleteTask",
+								"60ec49ee6b667c0320487711"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete task object from condition",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/deleteTaskCondition/60f19481dfa30019602c9df3",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"deleteTaskCondition",
+								"60f19481dfa30019602c9df3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete task object from field",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/deleteTaskField/60f28a5eda61ad272095e98e",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"deleteTaskField",
+								"60f28a5eda61ad272095e98e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit task field",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taskId\":\"60ee85954abb7b233c7503bb\",\r\n    \"field\":{\r\n        \r\n        \"fieldType\":\"Date/Time\",\r\n        \"fieldLabel\":{\"en\":\"field1\",\"ar\":\"arField\"},\r\n        \"fieldName\":\"FieldNAme\",\r\n        \"fieldValues\":[\r\n            \"value1\",\r\n            \"value2\",\r\n            \"value3\",\r\n            \"value4\"\r\n        ],\r\n        \"defaultVisible\":true,\r\n        \"defaultValue\":\"Select AC Manufacturer\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/editTaskField",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"editTaskField"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit task condition",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taskId\":\"60ee87904abb7b233c7503bf\",\r\n    \"condition\":{\r\n      \r\n      \"condition_satisfies\":true,\r\n        \"field_conditions\":[{\r\n                \"conditionId\":\"60ee81774abb7b233c7503b3\",\r\n                \"conditionFieldType\":\"location\",\r\n                \"conditionFieldName\":\"Select AC Type\",\r\n                \"conditionFieldCondition\":\"contain\",\r\n                \"conditionFieldValue\":\"Split AC\",\r\n                \"conditionSatisfyAll\":true\r\n        }],\r\n        \"field_actions\":[{\r\n            \"fieldAction\":\"disable\",\r\n            \"actionFieldName\":\"Select AC Type\"\r\n        }]\r\n        \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/editTaskCondition",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"editTaskCondition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get task by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MGU2ZGVlMzBlMWIzNjg3MTBiNzM1ZGIiLCJpYXQiOjE2MjkxNzg4MzAyMjJ9.dZDruyKKworLXXVDVrEBLQG9zLLF6KxGetszOhjjzjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/task/getTaskById/60ee85954abb7b233c7503bb",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"task",
+								"getTaskById",
+								"60ee85954abb7b233c7503bb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "offer",
+			"item": [
+				{
+					"name": "add offer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\":\"6101126a1c6d2f0cf8100244\",\r\n    \"userId\":\"60e6dee30e1b368710b735db\",\r\n    \"serviceProvider\":\"NewServiceProvider\",\r\n    \"status\":\"Cancelled\",\r\n    \"reason\":\"newReason\",\r\n    \"offers\":{\r\n            \"offerName\": \"newOffer\",\r\n       \"offerCreatedBy\":\"SUPERADMIN\", \r\n       \"offerImage\":\"https://alistadocuments.s3.us-east-2.amazonaws.com/1626267975417Contract-Address-0xd4e392f650a46c94e2ea808360f7826d88eb517e-BscScan%20%282%29.png\", \r\n       \"offerCreatedOn\":\"15 JUL,2021 2:16 PM\"\r\n    },\r\n    \"offerProvided\":{\r\n        \"offerApplyArea\":\"installation\",\r\n        \"offer\":\"choose 3 servvices get 1 free service\"\r\n        },\r\n    \"offerPeriod\":{\r\n       \"offerMode\":{ \r\n        \"offerType\":\"Repeat monthly\",\r\n        \"from\":\"15 JUL 2021\",\r\n        \"to\":\"15 AUG 2021\"\r\n        },\r\n        \"offerRepeat\":{\r\n            \"offerRepeatType\":\"Monthly\",\r\n             \"weekday\":\"Tuesday\",\r\n              \"order\":\"First\",\r\n               \"from\":\"10:00 AM\",\r\n                \"to\":\"12:00 PM\"\r\n        }\r\n    },\r\n    \"location\":{\r\n        \"otherLocation\":\"pakistan\",\r\n        \"offerTermAndCondition\":\"test terms dummy terms\"\r\n    },\r\n    \"name\":\"newName\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/addOffer",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"addOffer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit offer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"offerId\":\"611a5cf4a2edfd3eb4821f25\",\r\n    \"name\":\"offer 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/editOffer",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"editOffer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Offer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/v1/admin/offer/deleteOffer/60ec438d87da0e4e9ce02677",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"deleteOffer",
+								"60ec438d87da0e4e9ce02677"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit Banner",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "offerImage",
+									"type": "file",
+									"src": "/C:/Users/Usman/Downloads/Contract-Address-0xd4e392f650a46c94e2ea808360f7826d88eb517e-BscScan (2).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/editBanner/60f013474a4e9e133c418f95",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"editBanner",
+								"60f013474a4e9e133c418f95"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit term and conditions",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"offerTermAndCondition\":\"new term and conditions\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/editTermAndCondition/60f013474a4e9e133c418f95",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"editTermAndCondition",
+								"60f013474a4e9e133c418f95"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Reject\",\r\n    \"reason\":\"new reject reason\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/updateStatus/60f013474a4e9e133c418f95",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"updateStatus",
+								"60f013474a4e9e133c418f95"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get offer with id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/offer/getOfferById/60f013474a4e9e133c418f95",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"offer",
+								"getOfferById",
+								"60f013474a4e9e133c418f95"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "taxes",
+			"item": [
+				{
+					"name": "add tax",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\":\"6101109afb5fac13ff8466da\",\r\n    \"percentage\":\"14\",\r\n    \"taxType\":\"SALE\",\r\n    \"status\":\"Enabled\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/addTax",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"addTax"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tax",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/getTax",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"getTax"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tax by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/getTaxById/61029829d6bff34108ea4b8b",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"getTaxById",
+								"61029829d6bff34108ea4b8b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit tax",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\":[\"603cc5b44cf9b71e78182f98\"],\r\n    \"percentage\":\"17\",\r\n    \"taxType\":\"VAT\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/editTax/61028fcc4a0d3b2c2828ca57",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"editTax",
+								"61028fcc4a0d3b2c2828ca57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Enabled\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/editStatus/610294b934958213907cb763",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"editStatus",
+								"610294b934958213907cb763"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete tax",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/tax/deleteTax/61029829d6bff34108ea4b8b",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"tax",
+								"deleteTax",
+								"61029829d6bff34108ea4b8b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "holiday",
+			"item": [
+				{
+					"name": "add holiday",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\":\"610112611c6d2f0cf8100242\",\r\n    \"all\":true,\r\n    \"oneDay\": true,\r\n    \"holidayName\":\"SALE\",\r\n    \"holidayType\": \"RAMADAN\",\r\n    \"repeatAnnually\": false,\r\n    \"fromDate\": \"2021-07-26\",\r\n    \"toDate\": \"2021-07-28\",\r\n    \"date\": \"2021-07-28\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/holiday/addHoliday",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"holiday",
+								"addHoliday"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get holiday",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/holiday/getHoliday",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"holiday",
+								"getHoliday"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get holiday by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/holiday/getHolidayById/610d1c442c7e9a139c860445",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"holiday",
+								"getHolidayById",
+								"610d1c442c7e9a139c860445"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit holiday",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\":\"6101109afb5fac13ff8466da\",\r\n    \"repeatAnnually\":true,\r\n    \"data\":\"2021-08-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/holiday/editHoliday/611a5252a9057a45d0117749",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"holiday",
+								"editHoliday",
+								"611a5252a9057a45d0117749"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete holiday",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/holiday/deleteHoliday/610d1c442c7e9a139c860445",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"holiday",
+								"deleteHoliday",
+								"610d1c442c7e9a139c860445"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "timeSlot",
+			"item": [
+				{
+					"name": "add time slot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"timeSlot\": {\r\n    \"timeSlotName\":\"newSlot\",\r\n    \"timeSlotType\":\"Working houre\"\r\n    },\r\n    \"locations\":[{\r\n    \"country\":\"Pakistan\",\r\n    \"governate\":\"Riyadh\",\r\n    \"city\":\"Lahore\",\r\n    \"district\":\"Lahore\"\r\n    }],\r\n    \"tasks\":[{\r\n    \"category\":\"category1\",\r\n    \"service\":\"service1\",\r\n    \"task\":\"newTask\"\r\n    }],\r\n    \"serviceProvider\":{\r\n    \"name\":\"newName\",\r\n    \"phone\":\"4567890\",\r\n    \"email\":\"example@exampl.com\"\r\n    },\r\n    \"makeTimeSlot\":{\r\n        \"type\":\"Manually\",\r\n        \"timeSlotPerDay\":\"4\",\r\n        \"duration\":[{\r\n            \"houre\":\"2\",\r\n            \"minutes\":\"23\"\r\n        }],\r\n        \"slots\":[{\r\n            \"slot\":\"slot1\",\r\n            \"startTime\":\"3:32AM\",\r\n            \"endTime\":\"2:23PM\"\r\n        }]\r\n    },\r\n    \"weekday\":\"Monday\",\r\n    \"aheadBooking\":{\r\n        \"month\":\"3\",\r\n        \"weeks\":\"4\",\r\n        \"days\":\"3\"\r\n    },\r\n    \"schedule\":{\r\n        \"startDate\":\"2-04-2021\",\r\n        \"endDate\":\"2-04-2022\",\r\n        \"startTime\":\"2:09PM\",\r\n        \"endTime\":\"4:09PM\",\r\n        \"setAsDefault\":true\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/timeSlot/addTimeSlot",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"timeSlot",
+								"addTimeSlot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Time Slot By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/timeSlot/getTimeSlotById/6112156cb48e7426549e1db8",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"timeSlot",
+								"getTimeSlotById",
+								"6112156cb48e7426549e1db8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Time Slot",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/timeSlot/getTimeSlot",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"timeSlot",
+								"getTimeSlot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete time slot",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "​localhost:5000/api/v1/admin/timeSlot/deleteTimeSlot/61121627b48e7426549e1dcc",
+							"host": [
+								"​localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"timeSlot",
+								"deleteTimeSlot",
+								"61121627b48e7426549e1dcc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

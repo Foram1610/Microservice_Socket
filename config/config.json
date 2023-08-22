@@ -1,0 +1,60 @@
+{
+    "APP_NAME": "Alista",
+    "AWS": {
+        "SECRET_ACCESS_ID": "",
+        "SECRET_ACCESS_KEY": "",
+        "REGION_NAME": "",
+        "BUCKET_NAME": ""
+    },
+    "CURL_ORIGIN": [
+        "http://localhost:5000",
+        "http://192.168.100.8:3000",   
+        "http://192.168.100.8:4200",
+        "http://stgapalista.skillroots.com",
+        "https://stgapalista.skillroots.com",
+        "https://stgapialista.skillroots.com",
+        "https://devapialista.skillroots.com",
+        "https://devapalista.skillroots.com"
+    ],
+    "FCM": {
+        "keys": ""
+    },
+    "twilio": {
+        "sandbox": {
+            "accountSid": "",
+            "authToken": "",
+            "twilioFrom": ""
+        },
+        "live": {
+            "accountSid": "",
+            "authToken": "",
+            "twilioFrom": ""
+        }
+    },
+    "google_Key": {
+        "key": ""
+    },
+    "SES": {
+        "email": "info@skillroots.com"
+    },
+    "PaymentConfig": {
+        "Default_Payment_Gateway": "",
+        "sandbox": {
+            "Stripe_Publishable_Key": "",
+            "Stripe_Secret_Key": ""
+        },
+        "live": {
+            "Stripe_Secret_Key": "",
+            "Stripe_Publishable_Key": ""
+        }
+    },
+    "Admin_Currency": "$",
+    "AWS_CONTENT_LENGTH": 500000000,
+    "PREFIX": {
+        "USER": "CUS",
+        "COMPANY": "COM",
+        "INDIVIDUAL": "IND",
+        "ADMIN": "ADM"
+    },
+    "UNIQUE_ID_START_FROM": "1001"
+}

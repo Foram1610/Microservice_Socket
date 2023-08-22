@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: deployment-eks-alista-app-backend
+    app.kubernetes.io/instance: deployment-eks-alista-app-backend-instance
+    app.kubernetes.io/version: '1.0.0'
+    app.kubernetes.io/managed-by: kubectl
+  namespace: eks-alista-apps
+  name: eks-alista-app-backend
+spec:
+  selector:
+    matchLabels:
+      app: deployment-eks-alista-app-backend
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: deployment-eks-alista-app-backend
+    spec:
+      containers:
+      - image: CONTAINER_IMAGE
+        imagePullPolicy: Always
+        name: alistaapp-api-container
+        ports:
+        - containerPort: 5000
