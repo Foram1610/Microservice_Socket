@@ -1,0 +1,16 @@
+{
+    "baseUrl": "https://192.168.100.89:5000/",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2M2Y4OGY5ZWNiYjIwZDY3MDAyMjc2YTAiLCJpYXQiOjE2NzkyOTI1NjcwODl9.qvUhuP1z3j0QjeLGMEtEmHgcwZRvKBRPduMGGaEssqw",
+    "addAdminPass": "eyueio@#000",
+    "addAdminPass2": "Alista@#000",
+    "adminPassword": "eyueio@#000",
+    "adminPassword2": "eyu@#000",
+    "providerPassword": "123456",
+    "providerPassword2": "12345556",
+    "userPassword": "123456",
+    "userPassword2": "12399456",
+    "userRegPassword": "123488739",
+    "userResetPassword": "12345678",
+    "firebaseToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjFlOTczZWUwZTE2ZjdlZWY0ZjkyMWQ1MGRjNjFkNzBiMmVmZWZjMTkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYWxpc3RhLWFwcCIsImF1ZCI6ImFsaXN0YS1hcHAiLCJhdXRoX3RpbWUiOjE2Nzg5NjkwOTksInVzZXJfaWQiOiJoa0wxRGRDTm1wVGh6OFgzZk1JbDM4SE53S0YyIiwic3ViIjoiaGtMMURkQ05tcFRoejhYM2ZNSWwzOEhOd0tGMiIsImlhdCI6MTY3ODk2OTA5OSwiZXhwIjoxNjc4OTcyNjk5LCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImFwcGxlLmNvbSI6WyIwMDA5MjYuOTQxZmIxYzJmZjgwNGU3NzlhYmQ3Y2M0MWI1YTMyMTcuMTEzOSJdfSwic2lnbl9pbl9wcm92aWRlciI6ImFwcGxlLmNvbSJ9fQ.Wfol-K74rLSETGNXoF3X-51B9UK_9Z_j0TZXmfqAKD2fiKc6QSvk9-WuF-Vo5PaEK1q6fUuzHJdYXf7YGXbx0iYPOnwawNNU_2CTK6UR9FxigCbEd8ByNtOOd1GiBsoa7oC8jyOmpKfqO8w_5rAgAJ2_eYnMab0L5JQQJXleL3u0vHPeqaitzWpwcLYMEr3dNQseN6Kh7HtpHjsLgqQ47MbV7FSEySIn9f0RnGgPEwFnH7nUlylCo98MyWXrThnBhHAj_dOBSXXLt3Xbn0wHegNRBvh-psFhia7J91d2bJHn64WPB4a8IuJ4LQTibZRBFTgsCcDx0l_6kTiPs1ZtdA",
+    "providerToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBbGlzdGEiLCJzdWIiOiI2MzJhZDMwYjA4MWIyYWExMmZlMzllMTMiLCJpYXQiOjE2NzkyOTI2MTI5MzR9.BFnyUgnU19Ou9AiLEuGxVkG1gchG_5l7dvqRirjVOMM"
+}
