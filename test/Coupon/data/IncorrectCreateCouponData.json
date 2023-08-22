@@ -1,0 +1,66 @@
+{
+    "code":"hello2",
+    "type":"VOUCHER/COUPON",
+    "promoType":"COUPON",
+    "availableTo": {
+      "allClient": false,
+      "firstOrderClient":false,
+      "selectedClient" : {
+        "enabled" : true,
+        "clientIds":["605daad71b5bbb0032172c28"]
+      },
+      "notAOrderSince":{
+        "enabled" : true,
+        "days": 3
+      }
+
+    },
+    "maximumUses": {
+      "enabled": true,
+      "uses" : 4
+    },
+    "maximumClientUses": {
+      "enabled" :true,
+      "maximumUses" : 2
+    },
+    "maximumCompletedOrder": {
+      "enabled" :true,
+      "maximumCompletedOrderCount" : 4
+    },
+    "availableToServiceTask":{
+      "allService": false,
+      "selectedServices":["6066e6babbe7309e0c4dd5f0"],
+      "selectedTasks" :["630c8fdcbc25cfb5a5acb16c"]
+    },
+    "location":{
+     "allLocation": false,
+     "availableInCountry":["6066e1aebbe7309e0c4dd5eb"],
+     "availableInGovernorate":["6030cc1b2e0620f34be56ba8"],
+     "availableInCity":[],
+     "availableInDistrict":["60388d141467697e676ae374"]
+    },
+    "timeLine":{
+      "validTill":false,
+      "dateTimeInterval":true,
+      "dateTimeIntervalStart":"1/1/1",
+      "dateTimeIntervalEnd":"1/1/1",
+      "validTillDate": "1/1/1"
+    },
+    "broadcastType" :  "SMS",
+    "action":{
+      "cashOnWallet": {
+        "enabled":true,
+        "amount":12.2
+      },
+      "discountPercentage":{
+        "enabled": true,
+        "percentage":12,
+        "uptoEnabled" :true,
+        "upto": 12
+      },
+      "discountAmount" :{
+        "enabled":true,
+        "amount":32
+      }
+    }
+  }
